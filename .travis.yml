@@ -1,6 +1,10 @@
 language: android
-android:
-  components:
+before_install:
+  - echo yes | android update sdk --filter extra-android-support --no-ui --force > /dev/null
+
+#android:
+  #components:
+
     # Uncomment the lines below if you want to
     # use the latest revision of Android SDK Tools
     # - platform-tools
